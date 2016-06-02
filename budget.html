@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Budgeting Tool</title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="budget.css">
+	<script type="text/javascript" src="lib/jquery.min.js"></script>
+	<script type="text/javascript" src="budget.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+	<h1>My Budget</h1>
+	<h2>Income</h2>
+	<div class="row spacing">
+		<div class="col-lg-6">
+			<label>Dustin's Income</label>
+		</div>
+		<div class="col-lg-6">
+			<input type="number">
+		</div>
+	</div>
+	<div class="row spacing">
+		<div class="col-lg-6">
+			<label>Jordan's Income</label>
+		</div>
+		<div class="col-lg-6">
+			<input type="number">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-6">
+			<h3>Total Income</h3>
+		</div>
+		<div class="col-lg-6">
+			<span id="total-inc"></span>
+		</div>
+	</div>
+
+	<hr>
+
+	<h2>Expenses</h2>
+	<div class="row spacing">
+		<div class="col-lg-6">
+			<label>Rent</label>
+		</div>
+		<div class="col-lg-6">
+			<input type="number">
+		</div>
+	</div>
+	<div class="row spacing">
+		<div class="col-lg-6">
+			<label>Groceries</label>
+		</div>
+		<div class="col-lg-6">
+			<input type="number">
+		</div>
+	</div>
+	<div class="row spacing">
+		<div class="col-lg-6">
+			<label>Gas</label>
+		</div>
+		<div class="col-lg-6">
+			<input type="number">
+		</div>
+	</div>
+	<div class="row spacing">
+		<div class="col-lg-6">
+			<label>Utilities</label>
+		</div>
+		<div class="col-lg-6">
+			<input type="number">
+		</div>
+	</div>
+	<div class="row spacing">
+		<div class="col-lg-6">
+			<label>Fun</label>
+		</div>
+		<div class="col-lg-6">
+			<input type="number">
+		</div>
+	</div>
+
+	<!-- this is an empty div to add expense categories to -->
+	<div id="add-to"></div>
+
+	<div class="row">
+		<div class="col-lg-6">
+			<h3>Total Expenses:</h3>
+		</div>
+		<div class="col-lg-6 align">
+			<span id="total-exp"></span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-6">
+			<h2>Net Cash:</h2>
+		</div>
+		<div class="col-lg-6">
+			<span id="net-cash"></span>
+		</div>
+	</div>
+
+
+	<button class="btn btn-info">Add Category</button>
+</div>
+
+
+</body>
+</html>
