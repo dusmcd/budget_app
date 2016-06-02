@@ -10,8 +10,17 @@ function addCategory() {
 };
 
 function sumExp() {
+	var input = document.querySelectorAll("input");
+	var sum = 0;
+	$("input").keyup(function() {
+		sum = 0;
+		for(var i = 0; i < input.length; i++ ) {
+			sum += Number(input[i].value);
+		}
 
-	$("#total-exp").text("0");
+		$("#total-exp").text(sum);		
+	})
+
 
 }
 
